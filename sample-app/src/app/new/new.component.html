@@ -2,17 +2,17 @@
 <form (submit)="onSubmit()">
     <div class="form-group">
         <label for="">Name</label>
-        <p class="small text-danger" *ngIf='err.name.message'>{{err.name.message}}</p>
+        <p class="small text-danger" >{{err?.name.message}}</p>
         <input type="text" class="form-control w-50" name="newProd.name" [(ngModel)]="newProd.name">
     </div>
     <div class="form-group">
             <label for="">Price</label>
-            <p class="small text-danger" *ngIf='err.price.message'>{{err.price.message}}</p>
+            <p class="small text-danger">{{err?.price.message}}</p>
             <input type="number" class="form-control w-50" name="newProd.price" [(ngModel)]="newProd.price">
     </div>
     <div class="form-group">
         <label for="">Image URl</label>
-        <p class="small text-danger" *ngIf='err.img.message'>{{err.img.message}}</p>
+        <p class="small text-danger" >{{err?.img.message}}</p>
         <input type="text" class="form-control w-50" name="newProd.img" [(ngModel)]="newProd.img">
     </div>
     <button type="submit">Submit</button>

@@ -9,7 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./edit.component.css']
 })
 export class EditComponent implements OnInit {
-  editPod:any;
+  editProd:any;
   err:any;
   constructor(private _httpService: HttpService, private _route:Router, private _router:ActivatedRoute) { }
 
